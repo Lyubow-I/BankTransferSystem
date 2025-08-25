@@ -1,0 +1,35 @@
+Описание связей между классами:
+Ассоциации (–):
+
+TransferService содержит коллекцию объектов Account (один ко многим)
+
+TransferService использует DateTimeUtils (один к одному)
+
+TransferService использует FileUtils (один к одному)
+
+TransferService использует ReportService (один к одному)
+
+Зависимости
+
+TransferService зависит от TransferOperation (создает объекты)
+
+TransferService зависит от Account (работает с объектами)
+
+Наследование
+
+TransferException наследуется от Exception
+
+Описание классов:
+TransferService — основной сервис обработки переводов
+
+Account — класс банковского счета
+
+TransferOperation — операция перевода
+
+DateTimeUtils — утилита работы с датой
+
+FileUtils — утилита работы с файлами
+
+ReportService — сервис формирования отчетов
+
+TransferException — пользовательское исключение для обработки ошибок
